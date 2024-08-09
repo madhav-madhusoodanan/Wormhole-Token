@@ -10,8 +10,5 @@ out/
 # Docs
 docs/
 
-# Circuits
-circuits/
-
 # Dotenv file
 .env
