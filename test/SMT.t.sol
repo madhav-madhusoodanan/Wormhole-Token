@@ -12,11 +12,11 @@ contract SparseMerkleTreeTest is Test {
         smt = new SparseMerkleTree();
     }
 
-    function testMultipleUpdates() public {
+    function testUpdates() public {
         uint256 hashedAddress = smt.getHash(1234, 1234);
         // console.log(hashedAddress);
 
-        smt.update(address(uint160(hashedAddress)), 1000);
+        smt.updateState(address(uint160(hashedAddress)), 1000);
         // console.logUint(smt.getRoot());
     }
 
